@@ -7,6 +7,7 @@ get("/") do
       <li><a href="/play/rock">Play Rock</a></li>
       <li><a href="/play/paper">Paper</a></li>
       <li><a href="/play/scissors">Scissors</a></li>
+      
     <h1>Welcome to Rock, Paper, Scissors!</h1>
     
   HTML
