@@ -71,6 +71,9 @@ end
 def play_game(player_choice)
   computer_choice = ["rock", "paper", "scissors"].sample
 
+  puts "Player chose: #{player_choice}"    
+  puts "Computer chose: #{computer_choice}" 
+
   result = determine_result(player_choice, computer_choice)
 
   <<~HTML
