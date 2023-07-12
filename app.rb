@@ -63,6 +63,7 @@ get("/") do
       <div><a href="/rock">Play Rock</a></div>
       <div><a href="/paper">Play Paper</a></div>
       <div><a href="/scissors">Play Scissors</a></div>
+      <div><a href="/">Rules</a></div>
     </div>
     <p><a href="https://en.wikipedia.org/wiki/Rock_paper_scissors">Wikipedia</a></p>
   HTML
