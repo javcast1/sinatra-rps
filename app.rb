@@ -89,12 +89,12 @@ end
 
 def determine_result(player_choice, computer_choice)
   if player_choice == computer_choice
-    "It's a tie!"
+    "We tied!"
   elsif (player_choice == "rock" && computer_choice == "scissors") ||
         (player_choice == "paper" && computer_choice == "rock") ||
         (player_choice == "scissors" && computer_choice == "paper")
-    "You win!"
+    "You won!"
   else
-    "You lose!"
+    "We lost!"
   end
 end
