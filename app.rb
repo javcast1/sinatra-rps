@@ -1,24 +1,26 @@
 require 'sinatra'
 require "sinatra/reloader"
 
-
-get("/play/rock") do
+get("/rock") do
   play_game("rock")
 end
 
-get("/play/paper") do
+get("/paper") do
   play_game("paper")
 end
 
-get("/play/scissors") do
+get("/scissors") do
   play_game("scissors")
+end
+
+get("/rules") do
+  <<~HTML
+    <h1><a href="/rules">Rules</a></h1>
+  HTML
 end
 
 get("/") do
   <<~HTML
-    <h1><a href="/play/rock">Play Rock</a></h1>
-    <h1><a href="/play/paper">Play Paper</a></h1>
-    <h1><a href="/play/scissors">Play Scissors</a></h1>
     <h1>Welcome to Rock-Paper-Scissors!</h1>
     <p>From Wikipedia:</p>
     <p>Rock-paper-scissors (also known as paper, scissors, stone or other variants) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand.</p>
@@ -56,6 +58,13 @@ get("/") do
       </tr>
     </table>
     <p>Originating from China and Japan, other names for the game in the English-speaking world include roshambo and other orderings of the three items, with "rock" sometimes being called "stone".</p>
+    <h2>Play Rock-Paper-Scissors:</h2>
+    <ul>
+      <li><a href="/rock">Play Rock</a></li>
+      <li><a href="/paper">Play Paper</a></li>
+      <li><a href="/scissors">Play Scissors</a></li>
+    </ul>
+    <p><a href="/">Go back to the homepage</a></p>
   HTML
 end
 
