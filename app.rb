@@ -64,7 +64,7 @@ get("/") do
       <div><a href="/paper">Play Paper</a></div>
       <div><a href="/scissors">Play Scissors</a></div>
     </div>
-    <p><a href="/">Go back to the homepage</a></p>
+    <p><a href="/">Rules</a></p>
   HTML
 end
 
