@@ -64,7 +64,7 @@ get("/") do
       <div><a href="/paper">Play Paper</a></div>
       <div><a href="/scissors">Play Scissors</a></div>
     </div>
-    <p><a href="/">Rules</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Rock_paper_scissors">Wikipedia</a></p>
   HTML
 end
 
@@ -77,7 +77,7 @@ def play_game(player_choice)
     <h1>You chose #{player_choice.capitalize}</h1>
     <p>The computer chose #{computer_choice.capitalize}</p>
     <h2>Result: #{result}</h2>
-    <p><a href="/">Play Again</a></p>
+    <p><a href="/">Rules</a></p>
   HTML
 end
 
