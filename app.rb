@@ -21,6 +21,11 @@ end
 
 get("/") do
   <<~HTML
+  <ul>
+      <li><a href="/rock">Play Rock</a></li>
+      <li><a href="/paper">Play Paper</a></li>
+      <li><a href="/scissors">Play Scissors</a></li>
+    </ul>
     <h1>Welcome to Rock-Paper-Scissors!</h1>
     <p>From Wikipedia:</p>
     <p>Rock-paper-scissors (also known as paper, scissors, stone or other variants) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand.</p>
@@ -59,11 +64,6 @@ get("/") do
     </table>
     <p>Originating from China and Japan, other names for the game in the English-speaking world include roshambo and other orderings of the three items, with "rock" sometimes being called "stone".</p>
     <h2>Play Rock-Paper-Scissors:</h2>
-    <ul>
-      <li><a href="/rock">Play Rock</a></li>
-      <li><a href="/paper">Play Paper</a></li>
-      <li><a href="/scissors">Play Scissors</a></li>
-    </ul>
   HTML
 end
 
