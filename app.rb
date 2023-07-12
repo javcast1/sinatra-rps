@@ -3,13 +3,12 @@ require "sinatra/reloader"
 
 get("/") do
   <<~HTML
-    <h1>Welcome to Rock, Paper, Scissors</h1>
-    <p>Click one of the options below to play:</p>
-    <ul>
-      <li><a href="/play/rock">Rock</a></li>
+      <ul>
+      <li><a href="/play/rock">Play Rock</a></li>
       <li><a href="/play/paper">Paper</a></li>
       <li><a href="/play/scissors">Scissors</a></li>
-    </ul>
+    <h1>Welcome to Rock, Paper, Scissors!</h1>
+    
   HTML
 end
 
@@ -41,4 +40,3 @@ def play_game(player_choice, computer_choice)
     "You lose!"
   end
 end
-
