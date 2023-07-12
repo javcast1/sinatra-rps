@@ -75,7 +75,7 @@ def play_game(player_choice)
 
   <<~HTML
     <h1>You chose #{player_choice.capitalize}</h1>
-    <p>The computer chose #{computer_choice.capitalize}</p>
+    <p>They played #{computer_choice.capitalize}</p>
     <h2>Result: #{result}</h2>
     <p><a href="/rock">Play Rock</a></p>
     <p><a href="/paper">Play Paper</a></p>
