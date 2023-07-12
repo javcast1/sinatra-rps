@@ -59,11 +59,11 @@ get("/") do
     </table>
     <p>Originating from China and Japan, other names for the game in the English-speaking world include roshambo and other orderings of the three items, with "rock" sometimes being called "stone".</p>
     <h2>Play Rock-Paper-Scissors:</h2>
-    <ul>
-      <li><a href="/rock">Play Rock</a></li>
-      <li><a href="/paper">Play Paper</a></li>
-      <li><a href="/scissors">Play Scissors</a></li>
-    </ul>
+    <div>
+      <div><a href="/rock">Play Rock</a></div>
+      <div><a href="/paper">Play Paper</a></div>
+      <div><a href="/scissors">Play Scissors</a></div>
+    </div>
     <p><a href="/">Go back to the homepage</a></p>
   HTML
 end
